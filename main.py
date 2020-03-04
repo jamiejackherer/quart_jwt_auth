@@ -7,7 +7,7 @@ import arrow, datetime
 class JWTAuth(object):
     '''
     An object used to hold JWT settings for the
-    Flask-GraphQL-Auth extension.
+    Quart-GraphQL-Auth extension.
 
     Instances of :class:`JWTAuth` are *not* bound to specific apps, so
     you can create one in the main body of your code and then bind it
@@ -16,10 +16,10 @@ class JWTAuth(object):
 
     def __init__(self, app=None):
         '''
-        Create the JWTAuth instance. You can either pass a flask application in directly
-        here to register this extension with the flask app, or call init_app after creating
+        Create the JWTAuth instance. You can either pass a quart application in directly
+        here to register this extension with the quart app, or call init_app after creating
         this object (in a factory pattern).
-        :param app: A flask application
+        :param app: A quart application
         '''
         self.app = app
         if app is not None:
@@ -27,14 +27,14 @@ class JWTAuth(object):
 
     def init_app(self, app):
         '''
-        Register this extension with the flask app.
+        Register this extension with the quart app.
 
-        :param app: A flask application
+        :param app: A quart application
         '''
         # Save this so we can use it later in the extension
         if not hasattr(app, 'extensions'):  # pragma: no cover
             app.extensions = {}
-        app.extensions['flask-jwt-auth'] = self
+        app.extensions['quart-jwt-auth'] = self
 
         self._set_default__configuration_options(app)
 

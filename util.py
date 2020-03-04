@@ -3,10 +3,10 @@ from quart import current_app, _app_ctx_stack as ctx_stack
 
 def _get_jwt_manager():
     try:
-        return current_app.extensions['flask-jwt-auth']
+        return current_app.extensions['quart-jwt-auth']
     except KeyError:  # pragma: no cover
         raise RuntimeError(
-            'You must initialize a JWTManager with this flask '
+            'You must initialize a JWTManager with this quart '
             'application before using this method'
         )
 
