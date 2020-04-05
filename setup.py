@@ -25,7 +25,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=["quart_jwt_auth"],
-    install_requires=["PyJWT", "quart", "quart_login"],
+    install_requires=["PyJWT", "quart"],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
