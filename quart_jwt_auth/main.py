@@ -109,4 +109,4 @@ class JWTAuth(object):
             key=current_app.config['JWT_PRIV_KEY'],
             algorithm='RS512',
             json_encoder=current_app.json_encoder,
-        ).decode('utf-8')
+        )#.decode('utf-8')

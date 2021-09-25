@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Quart-JWT-Auth
+Version: 0.0.1-aplha1
+Summary: JWT library for Quart
+Home-page: https://gitlab.com/jamieoglindsey0/quart_jwt_auth
+Author: Jamie Lindsey
+Author-email: jamieoglindsey0@gmail.com
+License: MIT
+Keywords: jwt,auth,quart
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
