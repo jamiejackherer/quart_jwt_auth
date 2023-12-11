@@ -1,7 +1,7 @@
 from quart import current_app, request, g
 from functools import wraps
 import jwt
-from quart_auth import current_user
+from quart_login import current_user
 
 from .exceptions import *
 
