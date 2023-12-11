@@ -7,7 +7,6 @@ Author: Jamie Lindsey
 Author-email: jamieoglindsey0@gmail.com
 License: MIT
 Keywords: jwt,auth,quart
-Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Environment :: Web Environment
 Classifier: Intended Audience :: Developers
@@ -18,3 +17,5 @@ Classifier: Programming Language :: Python :: 3.8
 Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Description-Content-Type: text/markdown
+Requires-Dist: PyJWT
+Requires-Dist: quart
