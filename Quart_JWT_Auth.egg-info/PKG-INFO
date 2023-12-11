@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: Quart-JWT-Auth
-Version: 0.0.1-aplha1
+Version: 0.0.1
 Summary: JWT library for Quart
 Home-page: https://gitlab.com/jamieoglindsey0/quart_jwt_auth
 Author: Jamie Lindsey
