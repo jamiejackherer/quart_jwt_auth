@@ -65,10 +65,10 @@ class JWTAuth(object):
             'JWT_USER_CLAIMS', 'user_claims'
         )
         app.config.setdefault(
-            'JWT_COOKIE_NAME', 'cereal-x-access-token'
+            'JWT_COOKIE_NAME', 'x-access-token'
         )
         app.config.setdefault(
-            'JWT_COOKIE_TOKEN_PREFIX', 'CAT='
+            'JWT_COOKIE_TOKEN_PREFIX', 'AT='
         )
 
     @staticmethod
