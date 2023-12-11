@@ -1,4 +1,4 @@
-from quart import current_app, _app_ctx_stack as ctx_stack
+from quart import current_app, g
 
 
 def _get_jwt_manager():
@@ -32,7 +32,7 @@ def get_raw_jwt():
     all of the claims of the JWT that is accessing the endpoint. If no
     JWT is currently present, an empty dict is returned instead.
     '''
-    return getattr(ctx_stack.top, 'jwt', {})
+    return getattr(g.quart_jwt_auth_ext, 'jwt', {})
 
 
 def get_jwt_identity():

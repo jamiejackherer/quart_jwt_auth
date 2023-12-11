@@ -1,4 +1,4 @@
-from quart import current_app, request
+from quart import current_app, request, g
 from functools import wraps
 import jwt
 from quart_auth import current_user
@@ -69,14 +69,14 @@ def verify_jwt_cookie(cookie_token):
     return False
 
 
-# def verify_jwt_in_argument(token): 
-#     '''
-#     Verify access token
+def verify_jwt_in_argument(token): 
+    '''
+    Verify access token
 
-#     :param jwt: The encoded JWT string to decode
-#     :return: Dictionary containing contents of the JWT
-#     '''
-#     ctx_stack.top.jwt = get_jwt_data(token)
+    :param jwt: The encoded JWT string to decode
+    :return: Dictionary containing contents of the JWT
+    '''
+    g.quart_jwt_auth_ext.jwt = get_jwt_data(token)
 
 
 def _extract_header_token_value(request_headers):
